@@ -120,7 +120,7 @@ export default class App extends Component {
 ```
 `router` 如何配置只取决于团队习惯，`PAGE_NAME` 也只是为了避免因为手误而出现拼写问题，所以才在入口文件 `index.js` 中配置成全局变量，这一切也是基于团队事先做好的约定。
 
-#### 基于组件名称`moduleName`
+#### 2.2、基于组件名称`moduleName`
 由于只要确保创建实例时的 `moduleName` 与 `registerComponent` 中的 `appKey` 参数保持一致，就能正确加载对应的组件，所以可以通过这个 `moduleName` 来实现我们的目的。实际上这两种方式可以同时使用，不过还是建议项目中统一采用其中一种即可。
 新建一个 `RNModuleViewController` 用于演示，并完善其 `.m` 文件，只罗列与第一种方式不同的代码：
 ```
@@ -150,10 +150,10 @@ AppRegistry.registerComponent('PageD', () => require('./page/PageD').default);
 ```
 通过这种方式的加载，并不需要像第一种 `<Component {...this.props}/>` 的写法，在组件内直接可以用 `this.props` 方式来获取初始参数。
 
-#### 更优的加载方式
+#### 2.3、更优的加载方式
 以上两种方式，可以但不限于同个 `UIViewController` 来加载所有 React Native 界面，完全可以根据业务情况，来创建独立的 `UIViewController` 加载对应的 React Native 界面。除此之外，可参考我的另外一篇文章[混编下的RCTRootView加载方式](https://github.com/ljunb/rn-relates/issues/2)，通过一个单例 `RCTBridge` ，来加载不同的 `RCTRootView` ，这或许是更好的实践方式。
 
-### Demo运行
+### 3、Demo运行
 ```
 $ git clone https://github.com/ljunb/iOSNativeDemo.git
 $ cd iOSNativeDemo
@@ -161,5 +161,5 @@ $ npm install
 $ react-native run-ios
 ```
 
-### TODO
+### 4、TODO
 - [ ] 原生与JavaScript的事件传递
