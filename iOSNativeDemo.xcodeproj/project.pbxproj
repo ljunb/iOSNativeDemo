@@ -13,6 +13,8 @@
 		EC4AB9341FCEFA25006D49A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4AB9331FCEFA25006D49A8 /* Assets.xcassets */; };
 		EC4AB9371FCEFA25006D49A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4AB9351FCEFA25006D49A8 /* LaunchScreen.storyboard */; };
 		EC4AB93A1FCEFA25006D49A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4AB9391FCEFA25006D49A8 /* main.m */; };
+		ECC9C33D1FD38D0D00FBC989 /* RNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC9C33C1FD38D0D00FBC989 /* RNViewController.m */; };
+		ECC9C3721FD3A73400FBC989 /* RNModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC9C3711FD3A73400FBC989 /* RNModuleViewController.m */; };
 		ECE4F3081FD17D250013A5A1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE4F25A1FD17CDE0013A5A1 /* libRCTActionSheet.a */; };
 		ECE4F3091FD17D250013A5A1 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE4F2B81FD17CDF0013A5A1 /* libRCTAnimation.a */; };
 		ECE4F30A1FD17D250013A5A1 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE4F2731FD17CDE0013A5A1 /* libRCTBlob.a */; };
@@ -287,6 +289,10 @@
 		EC4AB9361FCEFA25006D49A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4AB9381FCEFA25006D49A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4AB9391FCEFA25006D49A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECC9C33B1FD38D0D00FBC989 /* RNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNViewController.h; sourceTree = "<group>"; };
+		ECC9C33C1FD38D0D00FBC989 /* RNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNViewController.m; sourceTree = "<group>"; };
+		ECC9C3701FD3A73400FBC989 /* RNModuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNModuleViewController.h; sourceTree = "<group>"; };
+		ECC9C3711FD3A73400FBC989 /* RNModuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNModuleViewController.m; sourceTree = "<group>"; };
 		ECE4F2341FD17CDE0013A5A1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		ECE4F23A1FD17CDE0013A5A1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		ECE4F2431FD17CDE0013A5A1 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -356,6 +362,10 @@
 				EC4AB9351FCEFA25006D49A8 /* LaunchScreen.storyboard */,
 				EC4AB9381FCEFA25006D49A8 /* Info.plist */,
 				EC4AB9391FCEFA25006D49A8 /* main.m */,
+				ECC9C33B1FD38D0D00FBC989 /* RNViewController.h */,
+				ECC9C33C1FD38D0D00FBC989 /* RNViewController.m */,
+				ECC9C3701FD3A73400FBC989 /* RNModuleViewController.h */,
+				ECC9C3711FD3A73400FBC989 /* RNModuleViewController.m */,
 			);
 			path = iOSNativeDemo;
 			sourceTree = "<group>";
@@ -893,9 +903,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC9C33D1FD38D0D00FBC989 /* RNViewController.m in Sources */,
 				EC4AB92F1FCEFA25006D49A8 /* ViewController.m in Sources */,
 				EC4AB93A1FCEFA25006D49A8 /* main.m in Sources */,
 				EC4AB92C1FCEFA25006D49A8 /* AppDelegate.m in Sources */,
+				ECC9C3721FD3A73400FBC989 /* RNModuleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
